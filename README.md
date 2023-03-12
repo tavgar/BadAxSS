@@ -28,7 +28,7 @@ python Main.py --filename <filename> [--headers key1:value1,key2:value2]
 
 ## How it works
 
-The script sends GET or POST requests to the URLs in the specified file, injecting a test payload string: `()<>\"';:+ TESTOOO001122`. It then checks if the test string is reflected back in the HTML code. If it is, the script checks if at least 3 characters of the payload string are correctly reflected.
+The script sends GET or POST requests to the URLs in the specified file, injecting a test payload string: `()<>\"';:+ TESTOOO001122`. It then checks if the test string is reflected back in the HTML code. If it is, the script checks if at least 3 characters of the payload string are correctly reflected. As well as it tests every parameter in the given URL and teste it even if it doesn't.
 
 ## Note
 
