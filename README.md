@@ -1,6 +1,24 @@
 # BadAxSS
-Bad Ass XSS Tool: to find reflected XSSs
-# Reflective Cros```python xss_tester.py --filename <filename> [--headers key1:value1,key2:value2]```s
+BadAxSS Tool: to find reflected XSSs
+# Reflective Cross-Site Scripting (XSS) Tester
+
+This script tests URLs for reflective Cross-Site Scripting (XSS) vulnerabilities by injecting a test string and checking if it is reflected back in the HTML code.
+
+## Installation
+
+This script requires Python 3 and the following packages:
+
+- requests
+- beautifulsoup4
+
+You can install them using pip:
+
+```pip install requests beautifulsoup4```
+
+
+## Usage
+
+python Main.py --filename <filename> [--headers key1:value1,key2:value2]
 
 
 ### Arguments
