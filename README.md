@@ -2,7 +2,7 @@
 BadAxSS Tool: to find reflected XSSs
 # Reflective Cross-Site Scripting (XSS) Tester
 
-This script tests URLs for reflective Cross-Site Scripting (XSS) vulnerabilities by injecting a test string and checking if it is reflected back in the HTML code.
+This script tests URLs for reflective Cross-Site Scripting (XSS) vulnerabilities by injecting a test string with chars and then checking if they are reflected back in the HTML code.
 
 ## Installation
 
