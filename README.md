@@ -50,7 +50,7 @@ You can install them using pip:
 
 ## Usage
 
-```python xss_tester.py --filename <filename> [--headers key1:value1,key2:value2]```
+```python main.py --filename <filename> [--headers key1:value1,key2:value2]```
 
 
 ### Arguments
