@@ -1,11 +1,19 @@
 import requests
 from bs4 import BeautifulSoup
 import urllib.parse
+import argparse
 
+# Parse arguments from user
+parser = argparse.ArgumentParser()
+parser.add_argument("--headers", type=str,
+                    help="custom headers in format: key1:value1,key2:value2")
+parser.add_argument("--filename", type=str, required=True,
+                    help="filename containing URLs
+args = parser.parse_args()
 # Prompt user for payload and custom headers
 payload = "()<>\"';:+ TESTOOO001122"
 headers = {}
-header_input = input("Enter custom headers (format: key1:value1,key2:value2): ")
+header_input = args.headers
 if header_input:
     for header in header_input.split(','):
         key, value = header.split(':')
@@ -52,8 +60,7 @@ def test_url(url):
         print("The URL {} failed the test. Reflected characters: {}".format(url, reflected_chars))
         return False
 # Read URLs from file and test each one
-filename = input("Enter filename containing URLs: ")
-with open(filename, "r") as file:
+with open(args.filename, "r") as file:
     urls = file.readlines()
 
 for url in urls:
