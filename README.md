@@ -18,7 +18,7 @@ You can install them using pip:
 
 ## Usage
 
-python Main.py --filename <filename> [--headers key1:value1,key2:value2]
+python Main.py --filename <filename> --headers key1:value1,key2:value2
 
 
 ### Arguments
